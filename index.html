@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Example Site</title>
+    <title>Full Page Image</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
-        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-        nav { margin: 10px 0; }
-        nav a { margin-right: 15px; text-decoration: none; color: #333; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            background-image: url("https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=620&dpr=2&s=none&crop=none");
+            background-size: cover;        /* Makes image fill the page */
+            background-position: center;   /* Keeps it centered */
+            background-repeat: no-repeat;  /* Prevents tiling */
+        }
     </style>
 </head>
 <body>
-    <main>        
-        <img src="https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=620&dpr=2&s=none&crop=none" alt="Cat" width="300">
-    </main>
 </body>
 </html>
